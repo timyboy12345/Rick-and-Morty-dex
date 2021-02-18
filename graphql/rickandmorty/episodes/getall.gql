@@ -1,0 +1,13 @@
+query getAllEpisodes($page: Int) {
+    episodes(page: $page) {
+        results {
+            name
+            id
+            characters {
+                name
+                species
+                image
+            }
+        }
+    }
+}

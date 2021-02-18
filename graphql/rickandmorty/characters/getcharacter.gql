@@ -1,0 +1,18 @@
+query getCharacter($id: ID!) {
+  character(id: $id) {
+    id
+    created
+    gender
+    name
+    image
+    species
+    origin {
+      id
+      dimension
+      name
+      type
+    }
+    status
+    type
+  }
+}
